@@ -1,1 +1,1 @@
-# Tugas_Petruk_Checker_Word
+# Tugas_Petruk_Word_Search_Game
