@@ -108,4 +108,42 @@ int main(){
 			}
 				flag 0;
 			
-						
+			// Diagonal kiri-atas
+			for (int k=0;k < panjang; k++) {
+				if(kata2[k] == kata [i-k] [j-k]) {
+					flag=k;
+				} else {
+				        break;
+				}
+			}
+			if (flag == panjang-1) {
+				flag2 +=1;;
+			}else {
+				flag2 +=0;
+			}
+			flag = 0;
+			
+			//Atas
+			for(int k=0; k < panjang;k++) {
+				if(kata2[k] == kata [i=k][j]) {
+					flag=k;
+				} else {
+					break;
+				}
+			}
+			if (flag == panjang-1) {
+				flag2 +=1;
+			} else {
+				flag2 +==;
+			}
+			flag=0;
+			
+			// Diagonal atas-kanan
+			for (int k=0; k<panjang;k++) {
+				if(kata2[k] == kata [i-k] [j+k] {
+					flag=k;
+				} else {
+					break;
+				}
+				   }
+			
