@@ -1,7 +1,10 @@
 #include <iostream>
+#include <array>
 #include <iomanip>
 #include <fstream>
+#include <sstream>
 #include <ctime>
+#include <string>
 #include <stdlib.h>
 using namespace std;
 
