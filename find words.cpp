@@ -31,127 +31,127 @@ int main(){
 		panjang = strlen(kata2);
 		
 		for (int i=0; i<15; i++) {
-		for (int j=0; j<15;j++) {
-			if (kata2[0] == kata[i][j]) {
-			//ke kanan
-			for (int k=0; k<panjang; k++) {
-			if (kata2[k] == kata[i-k][j]) {
-				flag=k;
-			} else {
-				break;
+			for (int j=0; j<15;j++) {
+				if (kata2[0] == kata[i][j]) {
+				//ke kanan
+				for (int k=0; k<panjang; k++) {
+					if (kata2[k] == kata[i-k][j]) {
+						flag=k;
+					} else {
+						break;
+					}
 				}
-			}
-			if (flag == panjang-1) {
-				flag2 +=1;
-			} else {
-				flag2 +=0;
+				if (flag == panjang-1) {
+					flag2 +=1;
+				} else {
+					flag2 +=0;
 				}
 				flag=0;
 					
-			//diagonal bawah kanan
-			for (int k=0; k<panjang; k++) {
-				flag=k;
-			} else {
-				break;
+				//diagonal bawah kanan
+				for (int k=0; k<panjang; k++) {
+					if(kata2[k] == kata[i+k][j+k]) {
+						flag=k;
+					} else {
+						break;
+					}
 				}
-			}
-			if (flag == panjang-1) {
-				flag2 +=1;
-			} else {
-				flag 2+=0;
-			}
-			flag=0;
-				
-			//bawah
-			for (int k=0; k<panjang; k++) {
-			if (kata2[k] == kata [i+k][j]) {
-				flag=k;
-			}  else {
-				break;
+				if (flag == panjang-1) {
+					flag2 +=1;
+				} else {
+					flag 2+=0;
 				}
-			}
-			if (flag == panjang -1) {
-				flag2 +=1;
-			} else {
-				flag2 +=0;
-			}
 				flag=0;
 				
-			//diagonal kiri bawah 
-			for (int k=0; k<panjang; k++) {
-			if (kata2[k] == kata[i+k][j-k]) {
-				flag=k;
-			} else {
-				break;
+				//bawah
+				for (int k=0; k<panjang; k++) {
+					if (kata2[k] == kata [i+k][j]) {
+						flag=k;
+					}  else {
+						break;
+					}
 				}
-			}
-			
-			if (flag == panjang-1) {
-				flag2 +=1;
-			} else {
-				flag2 =+0;
-			} 
+				if (flag == panjang -1) {
+					flag2 +=1;
+				} else {
+					flag2 +=0;
+				}
 				flag=0;
 				
-			//kekiri
-			for (int k=0; k<panjang; k++) {
-			if (kata2[k] == kata[i][j-k]) {
-				flag=k;
-			} else {
-				break;
+				//diagonal kiri bawah 
+				for (int k=0; k<panjang; k++) {
+					if (kata2[k] == kata[i+k][j-k]) {
+						flag=k;
+					} else {
+						break;
+					}
 				}
-			}
-			if (flag == panjang-1) {
-				flag2 +=1;
-			} else { 
-				flag2 +=0;
-			}
+				if (flag == panjang-1) {
+					flag2 +=1;
+				} else {
+					flag2 =+0;
+				} 
+				flag=0;
+				
+				//kekiri
+				for (int k=0; k<panjang; k++) {
+					if (kata2[k] == kata[i][j-k]) {
+						flag=k;
+					} else {
+						break;
+					}
+				}
+				if (flag == panjang-1) {
+					flag2 +=1;
+				} else { 
+					flag2 +=0;
+				}
 				flag 0;
 			
-			// Diagonal kiri-atas
-			for (int k=0;k < panjang; k++) {
-				if(kata2[k] == kata [i-k] [j-k]) {
-					flag=k;
-				} else {
-				        break;
-				}
-			}
-			if (flag == panjang-1) {
-				flag2 +=1;;
-			}else {
-				flag2 +=0;
-			}
-			flag = 0;
-			
-			//Atas
-			for(int k=0; k < panjang;k++) {
-				if(kata2[k] == kata [i=k][j]) {
-					flag=k;
-				} else {
-					break;
-				}
-			}
-			if (flag == panjang-1) {
-				flag2 +=1;
-			} else {
-				flag2 +=0;
-			}
-			flag=0;
-			
-			// Diagonal atas-kanan
-			for (int k=0; k<panjang;k++) {
-				if(kata2[k] == kata [i-k] [j+k] {
-					flag=k;
-				} else {
-					break;
-				}
-			}
-			if(flag == panjang-1) {
-						flag2 +=1;
+				// Diagonal kiri-atas
+				for (int k=0;k < panjang; k++) {
+					if(kata2[k] == kata [i-k] [j-k]) {
+						flag=k;
 					} else {
-						flag2 +=0;
+				       		 break;
 					}
-					flag=0;
+				}
+				if (flag == panjang-1) {
+					flag2 +=1;
+				} else {
+					flag2 +=0;
+				}
+				flag = 0;
+			
+				//Atas
+				for(int k=0; k < panjang;k++) {
+					if(kata2[k] == kata [i-k][j]) {
+						flag=k;
+					} else {
+						break;
+					}
+				}
+				if (flag == panjang-1) {
+					flag2 +=1;
+				} else {
+					flag2 +=0;
+				}
+				flag=0;
+			
+				// Diagonal atas-kanan
+				for (int k=0; k<panjang;k++) {
+					if(kata2[k] == kata [i-k] [j+k] {
+						flag=k;
+					} else {
+						break;
+					}
+				}
+				if(flag == panjang-1) {
+					flag2 +=1;
+				} else {
+					flag2 +=0;
+				}
+				flag=0;
 				}
 			}
 		}
