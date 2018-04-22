@@ -25,3 +25,85 @@ int main(){
 		} cout<<endl;
 	} cout<<endl;
 	
+	cout<<"Cari berapa kali : "; cin>>cari;
+	for (int i=0; i<cari; i++) {
+		cout<<"Masukkan kata : "; cin>>kata2;
+		panjang = strlen(kata2);
+		
+		for (int i=0; i<15; i++) {
+			for (int j=0; j<15;j++) {
+				if (kata2[0] == kata[i][j]) {
+					//ke kanan
+					for (int k=0; k<panjang; k++) {
+						if (kata2[k] == kata[i-k][j]) {
+							flag=k;
+						} else {
+							break;
+						}
+					}
+					if (flag == panjang-1) {
+						flag2 +=1;
+					} else {
+						flag2 +=0;
+					}
+					flag=0;
+					
+					//dia bawah kanan
+					for (int k=0; k<panjang; k++) {
+						flag=k;
+					} else {
+						break;
+					}
+				}
+				if (flag == panjang-1) {
+					flag2 +=1;
+				} else {
+					flag 2+=0;
+				}
+				flag=0;
+				
+				//bawah
+				for (int k=0; k<panjang; k++) {
+					if (kata2[k] == kata [i+k][j]) {
+						flag=k;
+					}  else {
+						break;
+					}
+				}
+				if (flag == panjang -1) {
+					flag2 +=1;
+				} else {
+					flag2 +=0;
+				}
+				flag=0;
+				
+				//dia kiri bawah 
+				for (int k=0; k<panjang; k++) {
+					if (kata2[k] == kata[i+k][j-k]) {
+						flag=k;
+					} else {
+						break;
+					}
+				}
+				if (flag == panjang-1) {
+					flag2 +=1;
+				} else {
+					flag2 =+0;
+				} 
+				flag=0;
+				
+				//kekiri
+				for (int k=0; k<panjang; k++) {
+					if (kata2[k] == kata[i][j-k]) {
+						flag=k;
+					} else {
+						break;
+					}
+				}
+				if (flag == panjang-1) {
+					flag2 +=1;
+				} else { 
+					flag2 +=0;
+				}
+				flag 0;
+						
