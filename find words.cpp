@@ -134,7 +134,7 @@ int main(){
 			if (flag == panjang-1) {
 				flag2 +=1;
 			} else {
-				flag2 +==;
+				flag2 +=0;
 			}
 			flag=0;
 			
@@ -145,5 +145,22 @@ int main(){
 				} else {
 					break;
 				}
-				   }
+			}
+			if(flag == panjang-1) {
+						flag2 +=1;
+					} else {
+						flag2 +=0;
+					}
+					flag=0;
+				}
+			}
+		}
+		if(flag2>0) {
+			cout<<"ada\n\n";
+		}else {
+			cout<<"tidak ada\n\n";
+		}
+	}
+	
+}
 			
