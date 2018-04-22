@@ -48,7 +48,7 @@ int main(){
 				}
 				flag=0;
 					
-			//dia bawah kanan
+			//diagonal bawah kanan
 			for (int k=0; k<panjang; k++) {
 				flag=k;
 			} else {
@@ -77,7 +77,7 @@ int main(){
 			}
 				flag=0;
 				
-			//dia kiri bawah 
+			//diagonal kiri bawah 
 			for (int k=0; k<panjang; k++) {
 			if (kata2[k] == kata[i+k][j-k]) {
 				flag=k;
@@ -107,4 +107,5 @@ int main(){
 				flag2 +=0;
 			}
 				flag 0;
+			
 						
