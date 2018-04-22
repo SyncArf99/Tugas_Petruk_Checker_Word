@@ -64,46 +64,47 @@ int main(){
 				
 			//bawah
 			for (int k=0; k<panjang; k++) {
-					if (kata2[k] == kata [i+k][j]) {
-						flag=k;
-					}  else {
-						break;
-					}
+			if (kata2[k] == kata [i+k][j]) {
+				flag=k;
+			}  else {
+				break;
 				}
-				if (flag == panjang -1) {
-					flag2 +=1;
-				} else {
-					flag2 +=0;
-				}
+			}
+			if (flag == panjang -1) {
+				flag2 +=1;
+			} else {
+				flag2 +=0;
+			}
 				flag=0;
 				
-				//dia kiri bawah 
-				for (int k=0; k<panjang; k++) {
-					if (kata2[k] == kata[i+k][j-k]) {
-						flag=k;
-					} else {
-						break;
-					}
+			//dia kiri bawah 
+			for (int k=0; k<panjang; k++) {
+			if (kata2[k] == kata[i+k][j-k]) {
+				flag=k;
+			} else {
+				break;
 				}
-				if (flag == panjang-1) {
-					flag2 +=1;
-				} else {
-					flag2 =+0;
-				} 
+			}
+			
+			if (flag == panjang-1) {
+				flag2 +=1;
+			} else {
+				flag2 =+0;
+			} 
 				flag=0;
 				
-				//kekiri
-				for (int k=0; k<panjang; k++) {
-					if (kata2[k] == kata[i][j-k]) {
-						flag=k;
-					} else {
-						break;
-					}
+			//kekiri
+			for (int k=0; k<panjang; k++) {
+			if (kata2[k] == kata[i][j-k]) {
+				flag=k;
+			} else {
+				break;
 				}
-				if (flag == panjang-1) {
-					flag2 +=1;
-				} else { 
-					flag2 +=0;
-				}
+			}
+			if (flag == panjang-1) {
+				flag2 +=1;
+			} else { 
+				flag2 +=0;
+			}
 				flag 0;
 						
