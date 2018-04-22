@@ -11,9 +11,9 @@ int main() {
     	srand (time(NULL));
     	for (int i=0; i<10; i++){
         	for (int j=0; j<10; j++) {
-			vector[i][j] = rand() %65;
+			vector[i][j] = rand() %75;
 			cout << "  " << (char)((vector[i][j]%26)+65);
-			} cout<<endl;
+			} cout<<"\n";
     	}
     
     	cout << endl;
