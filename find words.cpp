@@ -59,7 +59,7 @@ int main(){
 				if (flag == panjang-1) {
 					flag2 +=1;
 				} else {
-					flag 2+=0;
+					flag2 +=0;
 				}
 				flag=0;
 				
@@ -106,7 +106,7 @@ int main(){
 				} else { 
 					flag2 +=0;
 				}
-				flag 0;
+				flag = 0;
 			
 				// Diagonal kiri-atas
 				for (int k=0;k < panjang; k++) {
@@ -140,7 +140,7 @@ int main(){
 			
 				// Diagonal atas-kanan
 				for (int k=0; k<panjang;k++) {
-					if(kata2[k] == kata [i-k] [j+k] {
+					if(kata2[k] == kata [i-k] [j+k]) {
 						flag=k;
 					} else {
 						break;
